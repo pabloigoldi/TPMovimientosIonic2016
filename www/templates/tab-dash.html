@@ -1,0 +1,23 @@
+<ion-view view-title="MovSense">
+  <ion-content class="padding fondo-inicio">
+    
+  <div class="div-ingreso" ng-hide="Ingresar">
+      <button class="button button-assertive boton-ingreso" ng-click="Empezar()" >Continuar</button>
+    </div> 
+
+    <button class="button button-calm boton-grabar" on-long-press="AudioIzquierda()" on-touch-end="Detener('btnIzquierda')" ng-show="Ingresar">Grabar Audio Izquierda</button>
+    <br>
+
+    <button class="button button-calm boton-grabar" on-long-press="AudioDerecha()" on-touch-end="Detener('btnDerecha')" ng-show="Ingresar">Grabar Audio Derecha</button>
+    <br>
+
+    <button class="button button-calm boton-grabar" on-long-press="AudioAbajo()" on-touch-end="Detener('btnAbajo')" ng-show="Ingresar">Grabar Audio Abajo</button>
+    <br>
+
+    <button class="button button-calm boton-grabar" on-long-press="AudioArriba()" on-touch-end="Detener('btnArriba')" ng-show="Ingresar">Grabar Audio Arriba</button>
+    <br>
+
+    <button class="button button-calm boton-grabar" on-long-press="AudioAcostado()" on-touch-end="Detener('btnAcostado')" ng-show="Ingresar">Grabar Audio Acostado</button>
+    <br><br>
+  </ion-content>
+</ion-view>
